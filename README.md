@@ -5,7 +5,7 @@ Sample project for configuring a K8S cluster on GCP using Terraform
 
 1. Creation of a K8S cluster using Terraform on GKE, enabling node autoscaling on the default node pool (DONE)
 2. Deployment of a sample Node.js app with horizontal pod autoscaling (DONE)
-3. Demonstrate a load test using Locust
+3. Demonstrate a load test using Locust (DONE)
 4. Change the app to include a synthetic server-side load
 5. Verify the behavior of autoscaling on 2 dimensions: pod and node using kubectl
 6. Verify the elastic behavior of the cluster using a visual tool (K8S dashboard or weave cloud)
