@@ -22,6 +22,7 @@ resource "google_container_cluster" "sample-cluster" {
 
     node_config {
         machine_type = "${var.node_machine_type}"
+        oauth_scopes = "${var.node_pool_oauth_scopes}"
     }
   }
 }

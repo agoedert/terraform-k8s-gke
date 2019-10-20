@@ -1,13 +1,13 @@
 variable "gcp_project" {
-  default = "playgroundtwchile"
+  default = "technologyviewer"
 }
 
 variable "gcp_region" {
-  default = "southamerica-east1"
+  default = "us-east1"
 }
 
 variable "gcp_zone" {
-  default = "southamerica-east1-a"
+  default = "us-east1-b"
 }
 
 variable "initial_node_count" {
@@ -20,4 +20,11 @@ variable "max_node_count" {
 
 variable "node_machine_type" {
   default     = "g1-small"
+}
+
+variable "node_pool_oauth_scopes" {
+  type        = "list"
+  default = [
+    "https://www.googleapis.com/auth/devstorage.read_only"
+  ]
 }
