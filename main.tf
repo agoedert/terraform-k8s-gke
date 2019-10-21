@@ -3,16 +3,16 @@ terraform {
 }
 
 provider "google" {
-  project     = "${var.gcp_project}"
-  region      = "${var.gcp_region}"
+  project = "${var.gcp_project}"
+  region = "${var.gcp_region}"
 }
 
 resource "google_container_cluster" "sample-cluster" {
-  name               = "sample-cluster"
-  location           = "${var.gcp_zone}"
+  name = "sample-cluster"
+  location = "${var.gcp_zone}"
   
   node_pool {
-    name               = "default-pool"
+    name = "default-pool"
     initial_node_count = "${var.initial_node_count}"
 
     autoscaling {

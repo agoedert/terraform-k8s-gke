@@ -19,11 +19,11 @@ variable "max_node_count" {
 }
 
 variable "node_machine_type" {
-  default     = "g1-small"
+  default = "g1-small"
 }
 
 variable "node_pool_oauth_scopes" {
-  type        = "list"
+  type = "list"
   default = [
     "https://www.googleapis.com/auth/devstorage.read_only"
   ]
